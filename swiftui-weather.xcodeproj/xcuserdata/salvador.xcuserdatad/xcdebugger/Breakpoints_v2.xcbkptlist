@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "58F44763-1FE2-4D79-9348-D032A94F2427"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D8E0A2F-9EC9-4322-B0D8-5C237031D71E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swiftui-weather/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5D8E0A2F-9EC9-4322-B0D8-5C237031D71E - fbf00982a710e0e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(swiftui_weather.BackgroundView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(swiftui_weather.CityTextView, swiftui_weather.MainWeatherStatusView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView)&gt;&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;swiftui_weather.WeatherButton&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in swiftui_weather.ContentView.body.getter : some"
+                  moduleName = "swiftui-weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salvador/repos/ios/swiftui-weather/swiftui-weather/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17">
+               </Location>
+               <Location
+                  uuid = "5D8E0A2F-9EC9-4322-B0D8-5C237031D71E - f794387e9a188153"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(swiftui_weather.CityTextView, swiftui_weather.MainWeatherStatusView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView)&gt;&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;swiftui_weather.WeatherButton&gt;, SwiftUI.Spacer)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(swiftui_weather.BackgroundView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(swiftui_weather.CityTextView, swiftui_weather.MainWeatherStatusView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView, swiftui_weather.WeatherDayView)&gt;&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;swiftui_weather.WeatherButton&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in swiftui_weather.ContentView.body.getter : some"
+                  moduleName = "swiftui-weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salvador/repos/ios/swiftui-weather/swiftui-weather/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

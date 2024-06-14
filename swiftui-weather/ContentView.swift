@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(isNight: $isNight )
+            BackgroundView(isNight: isNight )
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
                 
@@ -28,10 +28,10 @@ struct ContentView: View {
                                    imageName: "cloud.sun.fill",
                                    temperature: 73)
                     WeatherDayView(dayOfWeek: "THU",
-                                   imageName: "cloud.sun.bolt",
+                                   imageName: "cloud.heavyrain.fill",
                                    temperature: 70)
                     WeatherDayView(dayOfWeek: "FRI",
-                                   imageName: "cloud.sun.rain",
+                                   imageName: "cloud.sun.rain.fill",
                                    temperature: 68)
                     WeatherDayView(dayOfWeek: "SAT",
                                    imageName: "cloud.rain.fill",
@@ -44,14 +44,20 @@ struct ContentView: View {
                     isNight.toggle()
                 } label: {
                     WeatherButton(title: "Change Day Time",
-                                  textColor: .blue,
-                                  backgroundColor: .white)
+                                  textColor: .white,
+                                  backgroundColor: .mint)
                 }
                 
                 Spacer()
             }
             
         }
+//        .onAppear {
+//            let button = WeatherButton(title: "Change Day Time",
+//                                       textColor: .blue,
+//                                       backgroundColor: .white)
+//            print(type(of: button.body))
+//        }
         
     }
 }
@@ -71,8 +77,11 @@ struct WeatherDayView: View {
                 .font(.system(size: 16, weight: .medium, design: .default))
                 .foregroundColor(.white)
             Image(systemName: "\(imageName)")
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
+//                .symbolRenderingMode(.palette)
                 .resizable()
+//                .foregroundColor(.pink)
+//                .foregroundStyle(.purple, .orange, .green)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             Text("\(temperature)°")
@@ -84,14 +93,19 @@ struct WeatherDayView: View {
 
 struct BackgroundView: View {
     
-    @Binding var isNight: Bool
+    var isNight: Bool
     
     var body: some View {
         
-        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue, isNight ? .gray : Color("lightBlue")]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+//        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue,
+//                                                   isNight ? .gray : Color("lightBlue")]),
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//        .ignoresSafeArea()
+        
+        ContainerRelativeShape()
+            .fill(isNight ? Color.black.gradient : Color.blue.gradient)
+            .ignoresSafeArea()
     }
 }
 
